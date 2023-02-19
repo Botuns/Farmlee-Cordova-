@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; script-src 'self' https://www.google-analytics.com;">
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'"> -->
+
+    <!-- <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; 
+               style-src 'self' 'unsafe-inline'; 
+               script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net"> -->
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <title>Auth</title>
+</head>
+<body>
+    
+</body><style>
+    body {
+      background-color: #eaf2f8;
+      font-family: 'Jet Mono', monospace;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .logo {
+      width: 50%;
+      max-width: 300px;
+      margin-top: 2rem;
+    }
+    .title {
+      font-family: 'Jet Mono', monospace;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #3F3F3F;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .form {
+      background-color: white;
+      border: 1px ;
+      border-radius: 2rem;
+      padding: 2rem;
+      margin-top: 2rem;
+      width: 80%;
+      max-width: 400px;
+    }
+    .form h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      color: #3F3F3F;
+    }
+    .form label {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #3F3F3F;
+    }
+    .form input[type="email"], .form input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      border: 1px solid #0ce952;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Jet Mono', monospace;
+    }
+    .form button[type="submit"] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 1rem;
+      transition: all 0.3s ease-in-out;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-family: 'Jet Mono', monospace;
+    }
+    .form button[type="submit"]:hover {
+      background-color: #214e23;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="../assets/Farmlee-removebg-preview.png">
+    <h1 class="title">FARMLEE</h1>
+    <div class="form">
+      <h2>Login</h2>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      <button type="submit"   id="btn">Login</button>
+      <button type="submit">Signup</button>
+
+    </div>
+  </div>
+</body>
+
+</html>
+<script  src="cordova.js"></script>
+        <script src="js/index.js"></script>
+<!-- <script nomodule="false"  type="module"  src="./js/auth.js"></script> -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAdpuNjfCXjgzKSBhUVu8tIq2KZHkTrySk",
+    authDomain: "farmlee-841e4.firebaseapp.com",
+    databaseURL: "https://farmlee-841e4-default-rtdb.firebaseio.com",
+    projectId: "farmlee-841e4",
+    storageBucket: "farmlee-841e4.appspot.com",
+    messagingSenderId: "641339464753",
+    appId: "1:641339464753:web:54db1f46a988c83388c910"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+  

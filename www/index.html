@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">        <meta name="format-detection" content="telephone=no"> -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>FARMLEE</title>
+        <style>
+            @font-face {
+                font-family: 'JetMono-Bold';
+                src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+            }
+
+            body {
+              background-color: #a4ccec;
+              font-family: 'Jet Mono', monospace;
+            }
+            .container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+            }
+            .logo {
+                width: 80%;
+                max-width: 300px;
+                margin-top: 2rem;
+            }
+            .title {
+                font-family: 'Jet Mono', monospace;
+              font-size: 3rem;
+              font-weight: bold;
+              text-align: center;
+              color: #3F3F3F;
+              margin-bottom: 2rem;
+            }
+            .button {
+              background-color: #4CAF50;
+              border: none;
+              color: white;
+              padding: 1rem 2rem;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 1.5rem;
+              font-weight: bold;
+              border-radius: 1rem;
+              transition: all 0.3s ease-in-out;
+            }
+            .button:hover {
+              background-color: #3E8E41;
+              cursor: pointer;
+            }
+          </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo
+            " src="../assets/Farmlee-removebg-preview.png" >
+
+            <h1 class="title">FARMLEE</h1>
+            <a href="auth.html" ><button class="button">Get Started</button></a>
+          </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

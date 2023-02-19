@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmlee-Home</title>
+    <style>
+        body {
+          background-color: #eaf2f8;
+          font-family: Arial, sans-serif;
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+        .logo {
+          width: 50%;
+          max-width: 300px;
+          margin-top: 2rem;
+        }
+        .title {
+          font-family: 'Jet Mono', monospace;
+          font-size: 3rem;
+          font-weight: bold;
+          text-align: center;
+          color: #3F3F3F;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        .widget {
+          background-color: white;
+          border: 1px solid #D5D5D5;
+          border-radius: 1rem;
+          padding: 2rem;
+          margin-top: 2rem;
+          width: 80%;
+          max-width: 600px;
+        }
+        .widget h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          color: #3F3F3F;
+        }
+        .widget p {
+          font-size: 1.5rem;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          color: #3F3F3F;
+        }
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 1rem 2rem;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.5rem;
+          font-weight: bold;
+          border-radius: 1rem;
+          transition: all 0.3s ease-in-out;
+          margin-top: 1rem;
+        }
+        .button:hover {
+          background-color: #3E8E41;
+          cursor: pointer;
+        }
+        .logout {
+          position: absolute;
+          top: 0.5rem;
+          right: 0.5rem;
+          background-color: #c0392b;
+          border: none;
+          color: white;
+          padding: 0.5rem 1rem;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.2rem;
+          font-weight: bold;
+          border-radius: 1rem;
+          transition: all 0.3s ease-in-out;
+        }
+        .logout:hover {
+          background-color: #a83224;
+          cursor: pointer;
+        }
+      </style>
+    
+</head>
+<body>
+    <button class="logout">Log Out</button>
+    <div class="container">
+      <img class="logo" src="../assets/Farmlee-removebg-preview.png">
+      <h1 class="title">FARMLEE</h1>
+      <div class="widget">
+        <h2>Weather Report</h2>
+        <p>Current temperature: 72&deg;F</p>
+        <p>Forecast: Sunny</p>
+      </div>
+      <a class="button" href="#">Chat AI</a>
+      <a class="button" href="#">Scan Image</a>
+</body>
+</html>
